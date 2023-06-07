@@ -48,6 +48,7 @@
           <p class="lead about-subcontent">
             Now I hope to create software that will make a difference in people's lives.
           </p>
+          <!-- source: https://github.com/Ileriayo/markdown-badges -->
           <div>
             <img class="badge-icon" src="images/badge-java.png" alt="">
             <img class="badge-icon" src="images/badge-javascript.png" alt="">
@@ -69,100 +70,106 @@
       </div>
     </div>
   
-    <h2 id="projects">Custom cards</h2>
+    <h2 id="projects">Projects</h2>
 
-    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
-      <div class="col">
-        <div class="card shadow-sm">
-          <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
-          <div class="card-body">
-            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-            <div class="d-flex justify-content-between align-items-center">
-              <div class="btn-group">
-                <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
-              </div>
-              <small class="text-body-secondary">9 mins</small>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="col">
-        <div class="card shadow-sm">
-          <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
-          <div class="card-body">
-            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-            <div class="d-flex justify-content-between align-items-center">
-              <div class="btn-group">
-                <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
-              </div>
-              <small class="text-body-secondary">9 mins</small>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="col">
-        <div class="card shadow-sm">
-          <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
-          <div class="card-body">
-            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-            <div class="d-flex justify-content-between align-items-center">
-              <div class="btn-group">
-                <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
-              </div>
-              <small class="text-body-secondary">9 mins</small>
-            </div>
-          </div>
-        </div>
-      </div>
 
-      <div class="col">
-        <div class="card shadow-sm">
-          <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
-          <div class="card-body">
-            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-            <div class="d-flex justify-content-between align-items-center">
-              <div class="btn-group">
-                <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+    <div class="album py-5">
+      <div class="container">
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+    
+          <div class="col">
+            <div class="card shadow-sm mb-4">
+              <img class="bd-placeholder-img card-img-top" src="{{gym.image}}" alt="Thumbnail">
+              <div class="card-body">
+                 <p class="card-text">{{gym.name}}</p>
+                 <p>{{ gym.details }}</p>
+                <div class="d-flex justify-content-center align-items-center">
+                  <div class="btn-group">
+                    <a routerLink="/gyms/{{gym.id}}"><button type="button" class="btn btn-sm btn-outline-light">Learn More</button></a>
+                  </div>
+                </div>
               </div>
-              <small class="text-body-secondary">9 mins</small>
             </div>
           </div>
-        </div>
-      </div>
-      <div class="col">
-        <div class="card shadow-sm">
-          <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
-          <div class="card-body">
-            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-            <div class="d-flex justify-content-between align-items-center">
-              <div class="btn-group">
-                <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+          <div class="col">
+            <div class="card shadow-sm mb-4">
+              <img class="bd-placeholder-img card-img-top" src="{{gym.image}}" alt="Thumbnail">
+              <div class="card-body">
+                 <p class="card-text">{{gym.name}}</p>
+                 <p>{{ gym.details }}</p>
+                <div class="d-flex justify-content-center align-items-center">
+                  <div class="btn-group">
+                    <a routerLink="/gyms/{{gym.id}}"><button type="button" class="btn btn-sm btn-outline-light">Learn More</button></a>
+                  </div>
+                </div>
               </div>
-              <small class="text-body-secondary">9 mins</small>
             </div>
           </div>
-        </div>
-      </div>
-      <div class="col">
-        <div class="card shadow-sm">
-          <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
-          <div class="card-body">
-            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-            <div class="d-flex justify-content-between align-items-center">
-              <div class="btn-group">
-                <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+          <div class="col">
+            <div class="card shadow-sm mb-4">
+              <img class="bd-placeholder-img card-img-top" src="{{gym.image}}" alt="Thumbnail">
+              <div class="card-body">
+                 <p class="card-text">{{gym.name}}</p>
+                 <p>{{ gym.details }}</p>
+                <div class="d-flex justify-content-center align-items-center">
+                  <div class="btn-group">
+                    <a routerLink="/gyms/{{gym.id}}"><button type="button" class="btn btn-sm btn-outline-light">Learn More</button></a>
+                  </div>
+                </div>
               </div>
-              <small class="text-body-secondary">9 mins</small>
             </div>
           </div>
+
+
+
+
+          <div class="col">
+            <div class="card shadow-sm mb-4">
+              <img class="bd-placeholder-img card-img-top" src="{{gym.image}}" alt="Thumbnail">
+              <div class="card-body">
+                 <p class="card-text">{{gym.name}}</p>
+                 <p>{{ gym.details }}</p>
+                <div class="d-flex justify-content-center align-items-center">
+                  <div class="btn-group">
+                    <a routerLink="/gyms/{{gym.id}}"><button type="button" class="btn btn-sm btn-outline-light">Learn More</button></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card shadow-sm mb-4">
+              <img class="bd-placeholder-img card-img-top" src="{{gym.image}}" alt="Thumbnail">
+              <div class="card-body">
+                 <p class="card-text">{{gym.name}}</p>
+                 <p>{{ gym.details }}</p>
+                <div class="d-flex justify-content-center align-items-center">
+                  <div class="btn-group">
+                    <a routerLink="/gyms/{{gym.id}}"><button type="button" class="btn btn-sm btn-outline-light">Learn More</button></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card shadow-sm mb-4">
+              <img class="bd-placeholder-img card-img-top" src="{{gym.image}}" alt="Thumbnail">
+              <div class="card-body">
+                 <p class="card-text">{{gym.name}}</p>
+                 <p>{{ gym.details }}</p>
+                <div class="d-flex justify-content-center align-items-center">
+                  <div class="btn-group">
+                    <a routerLink="/gyms/{{gym.id}}"><button type="button" class="btn btn-sm btn-outline-light">Learn More</button></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+    
         </div>
       </div>
+    </div>
+
 
       <div class="container">
         <footer class="d-flex flex-wrap justify-content-center align-items-center py-3 my-4 border-top text-center">
@@ -174,6 +181,19 @@
           </div>
         </footer>
       </div>      
+
+      <!-- source: https://stackoverflow.com/questions/7717527/smooth-scrolling-when-clicking-an-anchor-link -->
+    <script> 
+      document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+          anchor.addEventListener('click', function (e) {
+              e.preventDefault();
+
+              document.querySelector(this.getAttribute('href')).scrollIntoView({
+                  behavior: 'smooth'
+              });
+          });
+      });
+    </script>
 
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js"
     integrity="sha384-zYPOMqeu1DAVkHiLqWBUTcbYfZ8osu1Nd6Z89ify25QV9guujx43ITvfi12/QExE"

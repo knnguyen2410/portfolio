@@ -1,4 +1,9 @@
+html {
+    scroll-behavior: smooth;
+}
+
 html, body {
+    /* source: https://www.pinterest.com/pin/337488565829164875/ */
     background-image: url("images/background.gif");
     background-position: center;
     background-repeat: no-repeat;
@@ -15,6 +20,7 @@ html, body {
 #about {
     color: white;
     text-shadow: 2px 2px 2px gray;
+    margin-bottom: 150px;
 }
 
 .about-content {
@@ -34,6 +40,3 @@ html, body {
     padding: 3px;
 }
 
-footer {
-    color: white;
-}
