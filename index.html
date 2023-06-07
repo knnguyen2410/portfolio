@@ -69,107 +69,119 @@
         </div>
       </div>
     </div>
-  
-    <h2 id="projects">Projects</h2>
 
+    <div id="projects">
+      <br>
+      <br>
+      <br>
+    <div>
+
+    <div class="container text-center">
+      <h1 class="project-title display-5 fw-bold lh-1 mb-3">Projects</h1>
+    </div>
+    
 
     <div class="album py-5">
       <div class="container">
-        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
-    
-          <div class="col">
-            <div class="card shadow-sm mb-4">
-              <img class="bd-placeholder-img card-img-top" src="{{gym.image}}" alt="Thumbnail">
-              <div class="card-body">
-                 <p class="card-text">{{gym.name}}</p>
-                 <p>{{ gym.details }}</p>
-                <div class="d-flex justify-content-center align-items-center">
-                  <div class="btn-group">
-                    <a routerLink="/gyms/{{gym.id}}"><button type="button" class="btn btn-sm btn-outline-light">Learn More</button></a>
+        <div class="row justify-content-center">
+          <div class="col-lg-8">
+            <div class="row row-cols-1 row-cols-md-2 g-3">
+              <div class="col">
+                <div class="card shadow-sm mb-4">
+                  <div class="card-body">
+                    <a href="https://github.com/knnguyen2410/fit-finder-frontend" class="card-link">
+                      <p class="card-text text-center">Fit Finder</p>
+                    </a>
+                    <p>
+                      Find the perfect gym for you or grow a community for one you already own.
+                      A full-stack Java application comprises an Angular frontend and Spring Boot API backend.
+                    </p>
                   </div>
+                  <img class="bd-placeholder-img card-img-top" src="images/project-fitfinder.png" alt="Thumbnail">
+                </div>
+              </div>
+              <div class="col">
+                <div class="card shadow-sm mb-4">
+                  <div class="card-body">
+                    <a href="https://github.com/t-hendricks/wayfarer" class="card-link">
+                      <p class="card-text text-center">Wayfarer</p>
+                    </a>
+                    <p>
+                      Find your next travel destination and see the latest news.
+                      A single-page application built with Angular that integrates the Open Weather API.
+                    </p>
+                  </div>
+                  <img class="bd-placeholder-img card-img-top" src="images/project-wayfarer.png" alt="Thumbnail">
+                </div>
+              </div>
+            </div>
+            <div class="row row-cols-1 row-cols-md-2 g-3">
+              <div class="col">
+                <div class="card shadow-sm mb-4">
+                  <div class="card-body">
+                    <a href="https://github.com/dayjyun/job-board-api" class="card-link">
+                      <p class="card-text text-center">Job Board API</p>
+                    </a>
+                    <p>
+                      List your company and jobs, or apply to some yourself. Find your next job or employee here!
+                      A REST API developed using Java and Spring.
+                    </p>
+                  </div>
+                  <img class="bd-placeholder-img card-img-top" src="images/project-jobboardapi.png" alt="Thumbnail">
+                </div>
+              </div>
+              <div class="col">
+                <div class="card shadow-sm mb-4">
+                  <div class="card-body">
+                    <a href="https://github.com/knnguyen2410/tic-tac-toe" class="card-link">
+                      <p class="card-text text-center">Tic-Tac-Toe</p>
+                    </a>
+                    <p>
+                      Play a classic game of tic-tac-toe.
+                      A dynamic and responsive web application using HTML, CSS, and JavaScript.
+                    </p>
+                  </div>
+                  <img class="bd-placeholder-img card-img-top" src="images/project-tic-tac-toe.png" alt="Thumbnail">
+                </div>
+              </div>
+            </div>
+            <div class="row row-cols-1 row-cols-md-2 g-3">
+              <div class="col">
+                <div class="card shadow-sm mb-4">
+                  <div class="card-body">
+                    <a href="https://github.com/knnguyen2410/fitness-api" class="card-link">
+                      <p class="card-text text-center">Fitness API</p>
+                    </a>
+                    <p>
+                      Create an account and keep track of your customized workout plan.
+                      A monolithic backend REST API using Java, Spring, and PostgreSQL.
+                    </p>
+                  </div>
+                  <img class="bd-placeholder-img card-img-top" src="images/project-fitnessapi.png" alt="Thumbnail">
+                </div>
+              </div>
+              <div class="col">
+                <div class="card shadow-sm mb-4">
+                  <div class="card-body">
+                    <a href="https://github.com/knnguyen2410/rock-paper-scissors" class="card-link">
+                      <p class="card-text text-center">Rock Paper Scissors</p>
+                    </a>
+                    <p>
+                      Play a classic game of rock paper scissors.
+                      A Java backend game developed to exemplify the principles of OOP and exception handling.
+                    </p>
+                  </div>
+                  <img class="bd-placeholder-img card-img-top" src="images/project-rps.png" alt="Thumbnail">
                 </div>
               </div>
             </div>
           </div>
-          <div class="col">
-            <div class="card shadow-sm mb-4">
-              <img class="bd-placeholder-img card-img-top" src="{{gym.image}}" alt="Thumbnail">
-              <div class="card-body">
-                 <p class="card-text">{{gym.name}}</p>
-                 <p>{{ gym.details }}</p>
-                <div class="d-flex justify-content-center align-items-center">
-                  <div class="btn-group">
-                    <a routerLink="/gyms/{{gym.id}}"><button type="button" class="btn btn-sm btn-outline-light">Learn More</button></a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col">
-            <div class="card shadow-sm mb-4">
-              <img class="bd-placeholder-img card-img-top" src="{{gym.image}}" alt="Thumbnail">
-              <div class="card-body">
-                 <p class="card-text">{{gym.name}}</p>
-                 <p>{{ gym.details }}</p>
-                <div class="d-flex justify-content-center align-items-center">
-                  <div class="btn-group">
-                    <a routerLink="/gyms/{{gym.id}}"><button type="button" class="btn btn-sm btn-outline-light">Learn More</button></a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-
-
-
-          <div class="col">
-            <div class="card shadow-sm mb-4">
-              <img class="bd-placeholder-img card-img-top" src="{{gym.image}}" alt="Thumbnail">
-              <div class="card-body">
-                 <p class="card-text">{{gym.name}}</p>
-                 <p>{{ gym.details }}</p>
-                <div class="d-flex justify-content-center align-items-center">
-                  <div class="btn-group">
-                    <a routerLink="/gyms/{{gym.id}}"><button type="button" class="btn btn-sm btn-outline-light">Learn More</button></a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col">
-            <div class="card shadow-sm mb-4">
-              <img class="bd-placeholder-img card-img-top" src="{{gym.image}}" alt="Thumbnail">
-              <div class="card-body">
-                 <p class="card-text">{{gym.name}}</p>
-                 <p>{{ gym.details }}</p>
-                <div class="d-flex justify-content-center align-items-center">
-                  <div class="btn-group">
-                    <a routerLink="/gyms/{{gym.id}}"><button type="button" class="btn btn-sm btn-outline-light">Learn More</button></a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col">
-            <div class="card shadow-sm mb-4">
-              <img class="bd-placeholder-img card-img-top" src="{{gym.image}}" alt="Thumbnail">
-              <div class="card-body">
-                 <p class="card-text">{{gym.name}}</p>
-                 <p>{{ gym.details }}</p>
-                <div class="d-flex justify-content-center align-items-center">
-                  <div class="btn-group">
-                    <a routerLink="/gyms/{{gym.id}}"><button type="button" class="btn btn-sm btn-outline-light">Learn More</button></a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-    
         </div>
       </div>
     </div>
+    
 
+    
 
       <div class="container">
         <footer class="d-flex flex-wrap justify-content-center align-items-center py-3 my-4 border-top text-center">
@@ -180,7 +192,7 @@
             <span class="mb-3 mb-md-0 text-white">&copy; 2023 <a class="text-white" href="https://github.com/knnguyen2410/portfolio">Kim Nguyen</a></span>
           </div>
         </footer>
-      </div>      
+      </div>    
 
       <!-- source: https://stackoverflow.com/questions/7717527/smooth-scrolling-when-clicking-an-anchor-link -->
     <script> 
