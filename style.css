@@ -21,6 +21,10 @@ html, body {
     text-shadow: 2px 2px 2px gray;
 }
 
+.about-subcontent {
+    font-size: 18px;
+}
+
 #headshot {
     max-width: 300px;
     min-width: 300px;
