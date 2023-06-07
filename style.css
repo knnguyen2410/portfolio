@@ -33,3 +33,7 @@ html, body {
 .badge-icon {
     padding: 3px;
 }
+
+footer {
+    color: white;
+}
