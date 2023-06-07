@@ -1,134 +1,27 @@
+html, body {
+    background-image: url("/images/background.gif");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 
-  body * {
-    border: 1px ;
-    box-sizing: border-box;
-    padding: 0px;
-  }
+    height: 100%;
+    overflow-y: auto;
+}
 
-  body {
-    margin-right: 100px;
-    margin-left: 50px;
-    display: grid;
-    grid-template-rows: 100px 1fr 1fr 50px;
-    grid-template-columns: 1fr 350px;
-    grid-template-areas:
-      "header nav"
-      "about  socials"
-      "projects  projects"
-      "footer  footer"
-      ;
-  }
+.navbar {
+    background-color: #b28090;
+}
 
-  img {
-    transition: transform .2s;
-  }
+#about {
+    color: white;
+    text-shadow: 2px 2px 2px gray;
+}
 
-  img:hover{
-    transform:scale(1.1);
-  }
-  /* ------------------------------------- */
-  header {
-    grid-area: header;
-    display: flex;
-    width: 100px;   
-    margin-left: 10px;
-  }
+.about-content {
+    text-shadow: 2px 2px 2px gray;
+}
 
-  nav {
-    grid-area: nav;
-    text-align: right;
-    margin-top: 40px;
-    margin-left: -400px;
-  }
-
-  #nav-link {
-    padding: 25px;
-  }
-/* -----------------socials cell (headshot and links)-------------------- */
-  .socials {
-    grid-area: socials;
-    text-align: center;
-  }
-  
-  #headshot {
+#headshot {
     max-width: 300px;
-    max-height: 300px;
-  }
-
-  .socials li {
-    list-style: none;
-    margin: 0px 5px;
-    display: inline-block
-  }
-/* ------------------------------------- */
-  .about {
-    grid-area: about;
-    margin-top: 60px;
-    text-align: center;
-  }
-
-  h1, h2 {
-    font-weight: lighter;
-  }
-
-  h1 {
-    font-size: 40px;
-  }
-
-  p {
-    font-size: 18px;
-  }
-
-/* ------------------------------------- */
-  .projects {
-    grid-area: projects;
-    display: grid;
-    grid-template-rows: 1fr 1fr;
-    grid-template-columns: 1fr 1fr;
-    grid-gap: 50px;
-    grid-template-areas:
-    "project1 description1"
-    "project2  description2"
-    ;
-    text-align: center;
-    margin-top: -50px;
-  }
-
-  #project1 {
-    gird-area: project1;
-  }
-
-  #description1 {
-    gird-area: description1;
-  }
-  #project2 {
-    gird-area: project2;
-  }
-  #description2 {
-    gird-area: description2;
-  }
-
-  .piggy {
-    border-radius: 25px;
-    max-height: 250px;
-    max-width: auto;
-    text-align: center;
-  }
-
-  .description {
-    margin-top: 50px;
-    margin-left: -50px;
-    text-align: left;
-  }
-
-  li {
-    list-style: none;
-  }
-
-/* footer styling */
-
-footer {
-    grid-area: footer;
-    text-align: right;
-  }
-  
+    min-width: 300px;
+}
