@@ -44,3 +44,9 @@ html, body {
     color: white;
     text-shadow: 2px 2px 2px gray;
 }
+
+.card-title {
+    color: #4e7292;
+    font-size: x-large;
+    font-weight: bold;
+}
