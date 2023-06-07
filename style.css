@@ -1,4 +1,9 @@
+html {
+    scroll-behavior: smooth;
+}
+
 html, body {
+    /* source: https://www.pinterest.com/pin/337488565829164875/ */
     background-image: url("images/background.gif");
     background-position: center;
     background-repeat: no-repeat;
@@ -15,6 +20,7 @@ html, body {
 #about {
     color: white;
     text-shadow: 2px 2px 2px gray;
+    margin-bottom: 150px;
 }
 
 .about-content {
@@ -28,4 +34,29 @@ html, body {
 #headshot {
     max-width: 300px;
     min-width: 300px;
+}
+
+.badge-icon {
+    padding: 3px;
+}
+
+.project-title {
+    color: white;
+    text-shadow: 2px 2px 2px gray;
+}
+
+.card-title {
+    color: #4e7292;
+    font-size: x-large;
+    font-weight: bold;
+}
+
+.connect-contents {
+    color: white
+}
+
+.logo {
+    max-width: 50px;
+    max-height: 50px;
+    margin-right: 10px;
 }
